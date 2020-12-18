@@ -1017,6 +1017,7 @@ u32  count_non_255_bytes(afl_state_t *, u8 *);
 void simplify_trace(afl_state_t *, u8 *);
 void init_count_class16(void);
 void classify_counts(afl_forkserver_t *fsrv);
+u8 has_new_bits_unclassified(afl_state_t *, u8 *);
 void minimize_bits(afl_state_t *, u8 *, u8 *);
 #ifndef SIMPLE_FILES
 u8 *describe_op(afl_state_t *, u8, size_t);
